@@ -1,0 +1,117 @@
+body,html
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+.navbar{
+    height: 5vw;
+    width: 100%;
+    background-color: #f0f0f0;
+    position: fixed;
+    float: left;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0.15vw solid #b27300;
+}
+
+.leftnav{
+    position: absolute;
+    width:60%;
+    height: 5vw;
+    left: 0;
+}
+
+.leftnav img{
+    position: relative;
+    margin-left: 3vw;
+    margin-top: 0.5vw;
+    width: 4.5vw;
+    height: 4vw;
+}
+
+.socialnav{
+    position: absolute;
+    width:30%;
+    height: 5vw;
+    right: 0;
+}
+
+.socialnav i{
+    margin-right: 2vw;
+    margin-top: 1.3vw;
+    font-size: 2.4vw;
+    float: right;
+    color: #e59400;
+}
+
+.socialnav i:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.sidenav{
+    width: 25vw;
+    height: 100%;
+    background-color: rgba(255,255,255, 0.6);
+    position: fixed;
+    z-index: 10;
+    left: -25vw;
+    transition: left 1s;
+    transform: translate3d(0,0,0);
+
+}
+.sideline{
+    width: 3vw;
+    height: 30%;
+    position: absolute;
+    left: 25vw;
+    top: 35%;
+    z-index: 10;
+    background-color: #e59400;
+    border-right: 0.15vw solid #b27300;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.sideline i{
+    position: absolute;
+    color: black;
+    left: 10%;
+    top: 45%;
+    font-size: 2.5vw;
+    margin: 0;
+    padding: 0;
+    transition: left 1s,transform 1s;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        height: 8vw;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-bottom: 0.5vw solid #b27300;
+    }
+
+    .leftnav img{
+        position: relative;
+        margin-left: 4vw;
+        margin-top: 1vw;
+        width: 7vw;
+        height: 6vw;
+    }
+
+    .socialnav i{
+        margin-right: 4vw;
+        margin-top: 1.5vw;
+        font-size: 5vw;
+        
+    }
+
+    
+
+}
